@@ -1,0 +1,24 @@
+Variable,Description
+Date,Daily observation date
+Day_of_Week,Day name
+Month,Calendar month number
+Month_Name,Calendar month name
+Quarter,Calendar quarter
+Week_of_Year,ISO week number
+Is_Weekend,"1 if weekend, otherwise 0"
+Holiday,"1 if synthetic holiday, otherwise 0"
+Clinic_Type,Type of outpatient clinic
+Provider_Count,Number of providers available
+Available_Slots,Appointment capacity
+Scheduled_Appointments,Appointments scheduled
+Completed_Appointments,Appointments completed
+Cancelled_Appointments,Appointments cancelled
+No_Shows,Scheduled patients who did not attend
+Walk_Ins,Unscheduled walk-in patients
+Patient_Volume,Total completed patient volume
+Average_Wait_Time,Average patient waiting time in minutes
+Capacity_Utilization,Patient volume as percentage of available slots
+Revenue,Estimated daily revenue
+Claims_Submitted,Claims submitted
+Claims_Denied,Claims denied
+Staffing_Level,Total staffing level

@@ -629,7 +629,7 @@ ljung_box = acorr_ljungbox(
 )
 
 print("Ljung-Box Test:")
-display(ljung_box)
+st.write(ljung_box)
 
 # Compare actual vs SARIMA forecast on the test set
 

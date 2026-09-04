@@ -575,7 +575,7 @@ comparison = pd.DataFrame({
 })
 
 print("FIRST 10 DAYS")
-display(comparison.head(10))
+st.dataframe(comparison.head(10))
 
 print("\nLAST 10 DAYS")
 display(comparison.tail(10))

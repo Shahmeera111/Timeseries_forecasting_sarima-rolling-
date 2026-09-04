@@ -776,7 +776,7 @@ future_forecast = pd.Series(
 )
 
 print("NEXT 30 DAYS FORECAST")
-display(future_forecast)
+st.dataframe(future_forecast)
 
 # ==========================================
 # FUTURE FORECAST VISUALIZATION
@@ -886,7 +886,7 @@ new_forecast = sarima_forecast(
     forecast_days=30
 )
 
-display(new_forecast)
+st.dataframe(new_forecast)
 
 # ==========================================
 # PLOT NEW DATA + FORECAST
@@ -1043,7 +1043,7 @@ future_forecast = sarima_forecast(
 )
 
 # The sarima_forecast function returns a DataFrame directly.
-display(future_forecast)
+st.dataframe(future_forecast)
 
 # ==========================================
 # FUTURE SARIMA FORECAST VISUALIZATION

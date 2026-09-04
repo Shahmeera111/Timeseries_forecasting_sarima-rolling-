@@ -643,10 +643,10 @@ comparison["Error"] = comparison["Actual"] - comparison["SARIMA_Forecast"]
 comparison["Absolute_Error"] = comparison["Error"].abs()
 
 print("First 10 predictions:")
-display(comparison.head(10))
+st.dataframe(comparison.head(10))
 
 print("Last 10 predictions:")
-display(comparison.tail(10))
+st.dataframe(comparison.tail(10))
 
 print("\nFinal SARIMA Performance:")
 print(f"MAE  : {mean_absolute_error(test, final_forecast):.2f}")

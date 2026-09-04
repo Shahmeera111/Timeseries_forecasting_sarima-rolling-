@@ -11,12 +11,20 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import streamlit as st
 
-from google.colab import files
-uploaded = files.upload()
+st.title("Healthcare Patient Volume Forecasting")
 
-file_name = next(iter(uploaded))
-df = pd.read_csv(file_name)
+uploaded_file = st.file_uploader(
+    "Upload healthcare operations CSV",
+    type=["csv"]
+)
+
+if uploaded_file is not None:
+    df = pd.read_csv(uploaded_file)
+else:
+    st.info("Please upload the healthcare operations CSV file to begin.")
+    st.stop()
 df.head()
 
 df.shape

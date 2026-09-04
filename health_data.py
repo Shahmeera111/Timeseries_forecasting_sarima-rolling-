@@ -616,7 +616,7 @@ ljung_box = acorr_ljungbox(
 )
 
 print("Ljung-Box Test:")
-display(ljung_box)
+st.write(ljung_box)
 
 from statsmodels.stats.diagnostic import acorr_ljungbox
 

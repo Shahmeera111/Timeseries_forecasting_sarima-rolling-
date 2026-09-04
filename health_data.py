@@ -738,7 +738,7 @@ final_comparison = final_comparison.sort_values(
     by="RMSE"
 ).reset_index(drop=True)
 
-display(final_comparison)
+st.dataframe(final_comparison)
 
 # ==========================================
 # STEP 6: FUTURE FORECAST USING FINAL SARIMA
